@@ -1,0 +1,39 @@
+.world {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba($color: #11507e, $alpha: 0.6);
+  &__title {
+    color: white;
+    font-size: 36pt;
+    text-align: center;
+    margin: 15px;
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  &__continent {
+    width: $blockWidth;
+    height: 50%;
+
+    &_america {
+    }
+    &_europe {
+      background-color: rgba($color: #572c7e, $alpha: 0.6);
+    }
+    &_asia {
+      background-color: rgba($color: #b02725, $alpha: 0.6);
+    }
+    &_none {
+    }
+    &_africa {
+      background-color: rgba($color: #f0e50a, $alpha: 0.6);
+    }
+    &_australia {
+      background-color: rgba($color: #eb8028, $alpha: 0.6);
+    }
+  }
+}
